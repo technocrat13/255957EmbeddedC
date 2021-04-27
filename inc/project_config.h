@@ -17,8 +17,9 @@
 
 #define F_CPU 16000000UL 	/**< Clock Frequency of MCU is 16 MHz */
 
-#define LED_PORT (PORTB)    /**< LED Port Number */
-#define LED_PIN  (PORTB0)   /**< LED Pin number  */
+#define LED PB0
 
+#define switch1 PD0
+#define switch2 PD1
 
 #endif /* __PROJECT_CONFIG_H__ */

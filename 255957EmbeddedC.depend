@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1619541866 source:c:\vit\semester 7\placements\l&t\c programing\emmbeded-c\255957embeddedc\fuse.c
+	<avr/io.h>
+
+1619546246 source:c:\vit\semester 7\placements\l&t\c programing\emmbeded-c\255957embeddedc\main.c
+	<avr/io.h>
+
