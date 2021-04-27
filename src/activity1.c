@@ -20,20 +20,21 @@ void hallwaySwitch()
         {
             if (!(PIND & (1 << switch2)))
             {
-                PORTB &= ~(1 << LED);
+                PORTB |= (1 << LED);
             }
             else
             {
-                PORTB |= (1 << LED);
+                PORTB &= ~(1 << LED);
             }
 
             //_delay_ms(1000);
         }
+        
         else
         {
             if (!(PIND & (1 << switch2)))
             {
-                PORTB |= (1 << LED);
+                PORTB &= ~(1 << LED);
             }
             else
             {
@@ -43,5 +44,6 @@ void hallwaySwitch()
 
             //_delay_ms(1000);
         }
+
     };
 }
