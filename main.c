@@ -5,6 +5,7 @@
 #include "project_config.h"
 
 #include "activity1.h"
+#include "activity2.h"
 
 
 int main(void)
@@ -16,12 +17,14 @@ int main(void)
     DDRD &= ~(1 << switch2);
     PORTD |= (1 << switch2);
 
+    initADC();
+    uint16_t potReading;
     // Insert code
 
     while (1)
     {
         heaterSwitchCheck();
-
+        potReading = readADC(channel);
     };
     
     return 0;

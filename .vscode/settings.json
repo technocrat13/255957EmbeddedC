@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "activity1.h": "c"
+        "activity1.h": "c",
+        "project_config.h": "c"
     }
 }

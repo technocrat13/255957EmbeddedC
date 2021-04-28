@@ -22,4 +22,6 @@
 #define switch1 PD0
 #define switch2 PD1
 
+#define channel 1
+
 #endif /* __PROJECT_CONFIG_H__ */
