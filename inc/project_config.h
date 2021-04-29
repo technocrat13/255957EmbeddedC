@@ -24,4 +24,6 @@
 
 #define channel 1
 
+#define PWM_OUT PB1
+
 #endif /* __PROJECT_CONFIG_H__ */
