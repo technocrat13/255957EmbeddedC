@@ -42,8 +42,8 @@ int main(void)
             if (0 <= potReading && potReading < 200)
             {
                 OCR1A = 205;
-                unsigned char temp[] = "20C\n";
-                USARTPrint(&temp);
+                int temp = 20; 
+                USARTPrint(temp);
                 _delay_ms(300);
                 
                 //20%
@@ -51,24 +51,24 @@ int main(void)
             else if(200 <= potReading && potReading < 500)
             {
                 OCR1A = 410;
-                unsigned char temp[] = "25C\n";
-                USARTPrint(&temp);
+                int temp = 25;
+                USARTPrint(temp);
                 _delay_ms(300);
                 //40%
             }
             else if(500 <= potReading && potReading < 700)
             {
                 OCR1A = 719;
-                unsigned char temp[] = "Temperature: 29 degree C\n";
-                USARTPrint(&temp);
+                int temp = 29;
+                USARTPrint(temp);
                 _delay_ms(300);
                 //70%
             }
             else if(700 <= potReading && potReading <= 1024)
             {
                 OCR1A = 972;
-                unsigned char temp[] = "33C\n";
-                USARTPrint(&temp);
+                int temp = 33;
+                USARTPrint(temp);
                 _delay_ms(300);
                 //95%
             }

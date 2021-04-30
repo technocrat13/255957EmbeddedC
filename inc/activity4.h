@@ -6,6 +6,6 @@ void initUSART();
  * @brief timer0, fast PWM, non inverting, 64 prescaler
  */
 
-void USARTPrint(unsigned char *data[]);
+void USARTPrint(uint16_t data);
 
 #endif
