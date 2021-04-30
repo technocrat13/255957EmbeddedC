@@ -26,4 +26,7 @@
 
 #define PWM_OUT PB1
 
+#define USART_BAUDRATE 9600 /**< Baud rate for serial communication  */
+#define UBRR_VALUE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
+
 #endif /* __PROJECT_CONFIG_H__ */

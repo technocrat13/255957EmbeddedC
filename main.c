@@ -9,6 +9,7 @@
 #include "activity1.h"
 #include "activity2.h"
 #include "activity3.h"
+#include "activity4.h"
 
 
 int main(void)
@@ -22,6 +23,7 @@ int main(void)
 
     initADC();
     uint16_t potReading;
+    initUSART();
     // Insert code
 
     //initPWM();
@@ -40,24 +42,33 @@ int main(void)
             if (0 <= potReading && potReading < 200)
             {
                 OCR1A = 205;
+                unsigned char temp[] = "20C\n";
+                USARTPrint(&temp);
                 _delay_ms(300);
+                
                 //20%
             }
             else if(200 <= potReading && potReading < 500)
             {
                 OCR1A = 410;
+                unsigned char temp[] = "25C\n";
+                USARTPrint(&temp);
                 _delay_ms(300);
                 //40%
             }
             else if(500 <= potReading && potReading < 700)
             {
                 OCR1A = 719;
+                unsigned char temp[] = "Temperature: 29 degree C\n";
+                USARTPrint(&temp);
                 _delay_ms(300);
                 //70%
             }
             else if(700 <= potReading && potReading <= 1024)
             {
                 OCR1A = 972;
+                unsigned char temp[] = "33C\n";
+                USARTPrint(&temp);
                 _delay_ms(300);
                 //95%
             }

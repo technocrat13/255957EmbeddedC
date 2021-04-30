@@ -4,7 +4,7 @@
 #include "activity3.h"
 #include <util/delay.h>
 #include <avr/interrupt.h>
-
+#include <stdlib.h>
 
 void initPWM()
 {

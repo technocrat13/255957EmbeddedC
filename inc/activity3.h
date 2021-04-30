@@ -1,5 +1,5 @@
-#ifndef __ACTIVIT32_H__
-#define __ACTIVIT32_H__
+#ifndef __ACTIVITY3_H__
+#define __ACTIVITY3_H__
 
 void initPWM();
 /**
@@ -7,6 +7,5 @@ void initPWM();
  */
 
 void potScaler(uint16_t pot);
-
 
 #endif
